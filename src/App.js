@@ -1,11 +1,13 @@
 import './App.css';
+import MainComponents from './MainComponents';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-        <h1>Hello PUC Robotics Club </h1>
-        <h1>This website is in under Development</h1>
-    </div>
+    <Router>
+       <MainComponents/>
+    </Router>
   );
 }
 
