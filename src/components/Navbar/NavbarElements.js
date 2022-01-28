@@ -3,17 +3,23 @@ import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav `
-    margin-left: 150px;
-    margin-right: 150px;
+    background: #fff;
+    padding-left: 150px;
+    padding-right: 150px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw-1000px) / 2);
+    transition: 0.6s;
     z-index:10;
+    position: sticky;
+    top: 0;
+    transition: all 0.2s ease-in-out;
 
     @media screen and (max-width: 768px) {
         margin-left: 0;
+        height: 70px;
     }
 
 `;
@@ -26,9 +32,17 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    
 
     &.active {
-        color: #1287AB;
+        color:  #27363B;
+        border-bottom: 2px solid  #27363B;
+        transition: all 0.2s ease-in-out;
+        
+    }
+
+    &.hover {
+        color: #fff;
     }
 `;
 
@@ -36,11 +50,17 @@ export const Image = styled.img`
     width: 100px;
     height: 100px;
 
+    @media screen and (max-width: 768px){
+        height: 70px;
+        width: 70px;
+    }
+
 `;
 
 export const H1 = styled.h1`
     font-size: 30px;
     font-weight: bold;
+    color:  #27363B;
 
 
     @media screen and (max-width: 768px) {
@@ -90,16 +110,16 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-    border-radius: 1px;
+    border-radius: 4px;
     padding: 10px 22px;
-    color: #333;
+    color: #fff;
+    background: #27363B;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &.hover{
         transition: all 0.2s ease-in-out;
-        background: red;
-        color: #fff;
+        background: #fff;
     }
 `;

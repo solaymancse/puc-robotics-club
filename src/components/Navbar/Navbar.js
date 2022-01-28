@@ -20,7 +20,8 @@ export const Navbar = () => {
             Home
           </NavLink>
           <NavLink to="/about" activeStyle>
-          <NavDropdown title="About " id="basic-nav-dropdown">
+            About
+          <NavDropdown id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">About PUC</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">About Robotics Club</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.3">Member of Advisor Committee</NavDropdown.Item>
