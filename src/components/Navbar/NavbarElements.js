@@ -20,6 +20,7 @@ export const Nav = styled.nav `
     @media screen and (max-width: 768px) {
         margin-left: 0;
         height: 70px;
+        padding: 0;
     }
 
 `;
@@ -61,8 +62,7 @@ export const H1 = styled.h1`
     font-size: 30px;
     font-weight: bold;
     color:  #27363B;
-
-
+  
     @media screen and (max-width: 768px) {
         font-size: 16px;
 
@@ -121,5 +121,11 @@ export const NavBtnLink = styled(Link)`
     &.hover{
         transition: all 0.2s ease-in-out;
         background: #fff;
+        
     }
+`;
+
+export const Div = styled.div`
+    display: flex;
+    align-items: center;
 `;

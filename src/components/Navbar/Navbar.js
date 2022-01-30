@@ -1,19 +1,22 @@
 import React from "react"
 import logo  from '../../images/logo.jpg'
 import { NavDropdown } from "react-bootstrap";
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, Image, H1, SPAN} from './NavbarElements'
+import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, Image, H1, SPAN, Div} from './NavbarElements'
 
 export const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to="/">
+        <Div>
+          
+       
+        
           <Image src={logo} alt=""/> 
           <H1>Premier University <br/> <SPAN>Robotics Club</SPAN></H1>
-         
+          </Div>
         
 
-        </NavLink>
+        
         <Bars />
         <NavMenu>
           <NavLink to="/home" activeStyle>
