@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Section, Div, Img, P ,LeftSection} from "../Message/MessageElements";
+import { Section, Div, Img, P ,LeftSection, Intro} from "../Message/MessageElements";
 import img6 from "../../images/image6.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -28,12 +28,12 @@ export const Message = () => {
             <br />
             <br/>
             <hr/>
-            <p style={{fontSize:"22px",color:'#333',textAlign:"center",marginTop:'30px'}}>
+            <Intro>
               Prof. Dr. Anupam Sen
               <br />
               Honorable Vice Chancellor<br/>
               Premier University of Chittagong
-            </p>
+            </Intro>
           </P>
         </Div>
       </Section>

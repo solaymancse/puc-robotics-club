@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { P, Div, Span } from "./WelcomeElements";
+import { P, Div, Span, Intro } from "./WelcomeElements";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +18,7 @@ export const Welcome = () => {
           <br />
           <Span> PUC ROBOTICS CLUB</Span>
         </P>
-        <p style={{fontSize:'18px',color:'grey', textAlign:'justify'}} data-aos="fade-in">
+        <Intro data-aos="fade-in">
           The Premier University Chittagong Robotics Club (PUC Robotics Club) is
           a student run group of highly motivated undergraduate students from
           the Premier University, Chittagong. The group, with majors in Computer
@@ -35,7 +35,7 @@ export const Welcome = () => {
           first time in Bangladesh, this club had arranged a 3 on 3 robot
           football competition which was named as “Robo Soccer”. Some of the
           workshops and seminars organized by the department in last three years
-          are listed below: <br/><br/><br/>The club has numerous achievements in recent years
+          are listed below: <br/><br/>The club has numerous achievements in recent years
           that worth to mention. In its foundation year, the club achieved 1st
           runner-up position in Dailystar-Drishty National Science Fair 2010. It
           became 3rd runner-up in RMA Roborace 2011, champion in BAIUST Line
@@ -45,7 +45,7 @@ export const Welcome = () => {
           organized by CUET and Robo Fiesta 2018 organized by BUET. The club
           also became 2 times runner-up (2015, 2017) and 3 times champion (2014,
           2016, and 2018) in Digital Innovation Fair, Chittagong. 
-        </p>
+        </Intro>
       </Div>
     </>
   );

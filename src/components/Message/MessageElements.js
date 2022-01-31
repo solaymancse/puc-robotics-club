@@ -67,9 +67,24 @@ export const P = styled.p`
   
   
   @media screen and (max-width: 768px){
-    font-size: 14px;
+    font-size: 12px;
   }
   
   
+
+`;
+
+export const Intro = styled.div`
+  font-size:22px;
+  color:#333;
+  text-align:center;
+  margin-top:30px;
+
+  @media screen and (max-width: 768px){
+    font-size: 12px;
+    
+    margin-top: -100px;
+    margin-left: -400px;
+  }
 
 `;
